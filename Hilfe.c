@@ -1,33 +1,13 @@
-/* //This will become a list to rank my favourite media
-#include <stdio.h> 
-#include <stdlib.h>
-#include "Hilfe.h"
-
-char temp_medium[10];
-float temp_score;
-char temp_name[30];
-char temp_short_recap[200];
+#include"Hilfe.h"
+#include<stdio.h>
+#include<stdlib.h>
 
 
-
-
-
-int main (){
-FILE *fptr;
-fptr = fopen("E:\\MediaListe\\MediaListe.txt", "r+");
-
-if (fptr == NULL)
-{
-    printf("Hurensohn! Falscher Pfad angegeben");
-    exit(1);
-}
-
-
-int quit;
-int i = 1;
-int quit_num = 1;
-
-for(i=1; i<=6; i++){
+/*void add_entry (int i, char temp_medium[10], char temp_name[30], float temp_score, char temp_short_recap){
+    int quit;
+    int i = 1;
+    int quit_num = 1;
+    for(i=1; i<=5; i++){
     if(i==1){
         printf("Enter the medium: ");
         fgets(temp_medium, sizeof(temp_medium), stdin);
@@ -38,7 +18,7 @@ for(i=1; i<=6; i++){
     }
     else if (i==3){
         printf("Enter the score (0-100 points): ");
-        scanf("%f", temp_score); 
+        scanf("%f", temp_score);
     }
     else if (i==4){
         printf("Write a little description or your thaughts about the medium \n");
@@ -61,16 +41,4 @@ for(i=1; i<=6; i++){
         }
     } 
 }
-         
-
-}
-*/
-
-
-
-
-
-
-
-
-
+} */
