@@ -42,3 +42,48 @@
     } 
 }
 } */
+
+void List_enter(char* ptr, char* ptr_recap, char Liste[1][241]){
+    int i;
+
+     for (i = 0; i < 240 ; i++){
+
+        if(i <= 10){
+            if(*ptr != '\0'){
+                Liste[0][i] = *ptr;
+                ptr++;
+            }
+            else{
+                Liste[0][i] = ' ';
+
+            }
+        }
+        
+        
+        else if(i > 10 && i <= 200){
+            if (*ptr_recap != '\0'){
+                Liste[0][i] = *ptr_recap;
+                ptr_recap++;
+            }
+            else{
+                Liste[0][i] = ' ';
+            }
+        }
+        else {
+            break;
+        }
+    }
+
+    Liste[0][i] = '\0';
+}
+
+void List_print (char Liste[1][241]){
+    int i;
+     for (i = 0; i < 240; i++){
+        if (Liste[0][i] == '\0'){
+            Liste[0][i] = ' ';
+        }
+        printf("%c", Liste[0][i]);
+            
+    }
+}
