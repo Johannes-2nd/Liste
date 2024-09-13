@@ -4,12 +4,11 @@
 #include <string.h>
 //#include "Hilfe.h"
 ;;
-char temp_medium[11] = "Buchiiiiiii";
-char temp_score[5] = "9.81" ;
-char temp_name[31] = "Berserk";
-char temp_short_recap[201] = "Hallo du dumme Sau";
+char temp_medium[11];
+char temp_score[5] ;
+char temp_name[31];
+char temp_short_recap[201];
 char *ptr = "Buch";
-int i;
 char *ptr_recap = "Hallo du dumme Sau";
 
 
@@ -21,31 +20,35 @@ int main (){
     if (fptr == NULL){
         printf("Hurensohn! Falscher Pfad angegeben");
         exit(1);
-    }
+    }*/
 
     
     
+   int i;
 
-    for(i=1; i <= 5 ; ++i){
+    for(i=1; i <= 5 ; i++){
+
+        int quit;
         if(i==1){
             printf("Enter the medium:  ");
             //fgets(temp_medium, sizeof(temp_medium), stdin);
-            continue;
-        }
+            //puts(temp_medium);
+            
+        /*}
         else if (i==2){
             printf("Enter the name: ");
-            //fgets(temp_name, sizeof(temp_name), stdin)u;
-            continue;
+            fgets(temp_name, sizeof(temp_name), stdin);
+            
         }
         else if (i==3){
             printf("Enter the score (0-100 points): ");
-            //scanf("%f", temp_score); 
-            continue;
+            scanf("%c", temp_score); 
+            
         }
         else if (i==4){
             printf("Write a little description or your thaughts about the medium \n");
-            //fgets(temp_short_recap, sizeof(temp_short_recap), stdin);
-            continue;
+            fgets(temp_short_recap, sizeof(temp_short_recap), stdin);
+        */   
         }
         else {
             printf("If you want to enter another medium, please enter 1 \n");
@@ -61,11 +64,12 @@ int main (){
             }
             else {
                 printf("Please enter a valid number!");
-                continue;
-            } THE CODE RUNS, well without the "//" ones 
+               
+            }
         }
-    } */
-    char Liste[1][241] = {0};  
+    } 
+
+    /*char Liste[1][241] = {0};  
 
     for (i = 0; i < 240 ; i++){
 
@@ -105,13 +109,14 @@ int main (){
         printf("%c", Liste[0][i]);
             
     }
- 
+    */
      
     /*fprintf(fptr, "%c", Liste);
     fclose(fptr); */
         
     return 0;
 }
+
 
 
 

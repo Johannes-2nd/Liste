@@ -1,9 +1,9 @@
 struct Eintrag 
 {
-    char medium[10];
-    float Score;
-    char Name[30];
-    char short_recap[200];
+    char *medium;
+    char *Score;
+    char *Name;
+    char *short_recap;
 }; 
 
 void List_enter();
